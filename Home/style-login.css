@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* เพื่อใช้ pseudo element */
+    font-family: "Noto Sans Thai", sans-serif;
+    background: linear-gradient( #fff , #C6EEFF);
+    border-radius: 25px;
+
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;            /* ส่วนล่าง 10% */
+    background: #156AD1;    /* น้ำเงินเข้มเหมือนภาพ */
+}
+
+
+/* ----------------------------- */
+/* โลโก้ DE-MI ด้านบน */
+/* ----------------------------- */
+.logo-center img {
+    width: 130px;                 /* คงขนาด */
+    height: auto;
+    display: block;
+    margin: 5px auto 0 auto;
+}
+
+
+/* ----------------------------- */
+/* มาสคอตตรงกลาง */
+/* ----------------------------- */
+.mascot-img {
+    width: 180px;                 /* คงขนาด */
+    height: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+
+/* ----------------------------- */
+/* ช่องกรอกข้อมูล */
+/* ----------------------------- */
+.input-group {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 4px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    margin-left: 5px;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    padding: 0 15px;
+    background: #F2F7FA;
+    font-size: 15px;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.07);
+    outline: none;
+}
+
+input::placeholder {
+    color: #9bb6c6;
+}
+
+
+/* ----------------------------- */
+/* ปุ่ม Login สีเขียว */
+/* ----------------------------- */
+.btn {
+    margin-top: 12px;
+    width: 300px;
+    height: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(180deg, #19a961, #0e8f54);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 8px 15px rgba(14,135,86,0.2);
+}
+
+
+/* ----------------------------- */
+/* ปิด media query — ไม่ต้องย่อ */
+/* เพราะคุณต้องการให้ “ไม่ขยับ” */
+/* ----------------------------- */

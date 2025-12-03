@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+
+<body>
+    <div class="login-box">
+
+    <div class="logo-center">
+        <img src="logo.png" alt="DeMi Logo">
+    </div>
+
+    <img src="logoblue.png" class="mascot-img" alt="Mascot">
+
+    <div class="input-group">
+        <label>ชื่อผู้ใช้งาน</label>
+        <label for="citizenid">รหัสบัตรประชาชน:</label>
+        <input
+            type="number"
+            id="citizenid"
+            name="citizenid"
+            pattern="[0-9]{13}"
+            maxlength="13"
+            placeholder="รหัสบัตรประชาชน"
+            required
+            >
+    </div>
+
+    <div class="input-group">
+        <label>รหัสผ่าน</label>
+        <input type="password" placeholder="วัน/เดือน/ปีเกิด">
+    </div>
+
+    <a href="roleall.html"><button class="btn">Login เข้าสู่ระบบ</button></a>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรม Monitoring ต้นไม้ DM Remission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="Logo">
+                <span>โปรแกรม Monitoring ต้นไม้ DM Remission</span>
+            </div>
+            <div class="user-info">
+                <span>นายปวเรน เดียวก็หาย</span>
+                <img src="https://via.placeholder.com/24" alt="User Avatar">
+                <img src="https://via.placeholder.com/24" alt="Notification">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><img src="https://via.placeholder.com/20/ffffff/000000?text=👤" alt="Profile"> โปรไฟล์</a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/20/ffffff/000000?text=📅" alt="Calendar"> นัดหมาย</a></li>
+                    <li class="has-dropdown">
+                        <a href="#"><img src="https://via.placeholder.com/20/ffffff/000000?text=📊" alt="PAM"> PAM <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ความรู้ความเข้าใจ</a></li>
+                            <li><a href="#">PAM</a></li>
+                            <li><a href="#">ไม้บรรทัดวัดใจ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="active-sub"><img src="https://via.placeholder.com/20/ffffff/000000?text=📋" alt="Form"> ความรู้และความเข้าใจ</a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/20/ffffff/000000?text=📝" alt="Note"> คำถาม PAM</a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/20/ffffff/000000?text=📉" alt="Chart"> ไม่บริหารหัวใจ</a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/20/ffffff/000000?text=❤️" alt="Heart"> สื่อความรู้</a></li>
+                </ul>
+            </nav>
+            <button class="btn-primary">ออกจากระบบ</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>ความรู้และความเข้าใจ</h2>
+            <form id="knowledge-form">
+                <div class="question">
+                    <p>1. คุณตรวจวัดระดับน้ำตาลตามที่แพทย์แนะนำหรือไม่ (เช่น 2-3 ครั้ง/สัปดาห์)</p>
+                    <div class="options">
+                        <label><input type="checkbox"> ใช่</label>
+                        <label><input type="checkbox"> ไม่ใช่</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>2. คุณมีแผนการดูแลตนเอง (เช่น ออกกำลังกาย ควบคุมอาหาร) ที่ทำต่อเนื่องเกิน 6 เดือนหรือไม่</p>
+                    <div class="options">
+                        <label><input type="checkbox"> ใช่</label>
+                        <label><input type="checkbox"> ไม่ใช่</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>3. คุณเคยช่วยแนะนำหรือให้กำลังใจคนอื่นที่เป็นเบาหวานหรือไม่</p>
+                    <div class="options">
+                        <label><input type="checkbox"> ใช่</label>
+                        <label><input type="checkbox"> ไม่ใช่</label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary">ยกเลิก</button>
+                    <button type="submit" class="btn-primary">บันทึกข้อมูล</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
